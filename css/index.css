@@ -1,25 +1,26 @@
 @charset "utf-8";
 
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; background-color: #cceef2; }
+h2 {text-align: center; font-size: 25px;}
 ul,li,ol {list-style:none; margin: 0; padding:0;}
 
-header  {  width: 100%; height: 100px; 
+header  {  width: 100%; 
     display: flex; align-items: center; justify-content: space-around; line-height: 50px; }
 nav ul { display: flex; }
 nav li a{text-decoration: none; padding:15px; color:#666; }
 
-#slider {width: 100%; height: 800px;}
+#slider {width: 100%;}
 img {width: 100%; height: 100%;}
 
-.show {width: 1200px; height: 400px; background-color: brown; margin: 0 auto; margin-top: 30px;
+.show {width: 1200px; height: 400px;  margin: 0 auto; margin-top: 30px;
     display: flex; justify-content: space-around; align-items: center;}
-.video {width: 600px; height: 400px; background-color: bisque;}
-.add {width: 500px; height: 350px; background-color: bisque; text-align: center;}
+.video {width: 600px; height: 400px;}
+.add {width: 500px; height: 350px;  text-align: center;}
 .add h1 {padding-top: 50px;}
 
-.site {width: 590px; height: 100px; background-color: yellowgreen; margin: 0 auto; margin-top: 30px;}
+.site {width: 590px; height: 70px;  margin: 0 auto; margin-top: 30px;}
 
-.photo {width: 1200px; height: 550px; background-color: tomato; margin: 0 auto;  margin-top: 30px;
+.photo {width: 1200px; height: 550px;  margin: 0 auto;  margin-top: 30px;
     display: flex; flex-wrap: wrap; align-content: space-between;justify-content: space-between;  }
 .box1 {width: 285px; height: 260px; background-color: teal;}
 .box2 {width: 380px; height: 260px; background-color: teal;}
@@ -31,24 +32,21 @@ img {width: 100%; height: 100%;}
 
 .year {width: 1200px; height: 270px; background-color: violet; margin: 0 auto;  margin-top: 30px;}
 
-.game {width: 580px; height: 100px; background-color: tan; margin: 0 auto; margin-top: 30px;}
+.game {width: 580px; height: 70px;  margin: 0 auto; margin-top: 30px;}
 
-.play {width: 995px; height: 300px; background-color: wheat; margin: 0 auto;  margin-top: 30px; 
+.play {width: 995px; height: 300px;  margin: 0 auto;  margin-top: 30px; 
     display: flex; justify-content: space-around; align-items: center;}
-.box7 {width: 250px; height: 250px; background-color: yellowgreen;}
+.box7 {width: 250px; height: 250px; }
 .box7 img {width: 100%; height: 100%;}
-.box8 {width: 250px; height: 250px; background-color: yellowgreen;}
+.box8 {width: 250px; height: 250px; }
 .box8 img {width: 100%; height: 100%;}
-.box9 {width: 250px; height: 250px; background-color: yellowgreen;}
+.box9 {width: 250px; height: 250px; }
 .box9 img {width: 100%; height: 100%;}
 
 .around {width: 380px; height: 100px; background-color: sienna; margin: 0 auto;  margin-top: 30px;}
 
 .tour {width: 380px; height: 100px; background-color: sandybrown;margin: 0 auto;  margin-top: 30px;}
 
-.information {width: 1200px; height: 930px; background-color: seagreen; margin: 0 auto;  margin-top: 30px;
-    display: flex; flex-wrap: wrap; align-content: space-between;justify-content: space-between;}
-
-.guide {width: 550px; height: 450px; background-color: burlywood;}
 
 footer{width: 100%; height: 200px; background-color: slategrey;  margin-top: 30px;}
+footer > nav {display: flex; justify-content: center; }
