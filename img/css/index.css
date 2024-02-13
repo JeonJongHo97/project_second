@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'KNUTRUTHTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KNUTRUTHTTF.woff2') 
+    format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+
+*{margin: 0 auto; padding: 0;}
+body { background-image: url(../img/뒷\ 배경.png);}
+h2 {text-align: center; font-size: 40px;
+    font-family: 'KNUTRUTHTTF';}
+ul,li,ol {list-style:none; margin: 0; padding:0;}
+p {font-family: 'NanumSquare';}
+
+
+header  {  width: 100%; 
+    display: flex; align-items: center; justify-content: space-around; line-height: 50px; background-color: #bed9f1c3; }
+header > .logo {width: 200px; height: 50px;}
+nav ul { display: flex; font-size: 15px; margin-top: -20px ;}
+nav li a{text-decoration: none; padding: 30px; color:#000000;  }
+
+#slider {width: 100%;}
+img {width: 100%; height: 100%;}
+
+.show {width: 1200px; height: 400px;  margin: 0 auto; margin-top: 100px;
+    display: flex; justify-content: space-around; align-items: center;
+    border: 3px solid #eee; box-shadow: 0 0 0 2px;}
+.video {width: 600px; height: 400px;}
+.add {width: 500px; height: 350px;  text-align: center; background-color: #f6f5f5;}
+.add h1 {padding-top: 50px;}
+
+.site {width: 590px; height: 70px;  margin: 0 auto; margin-top: 100px;}
+
+.photo {width: 1200px; height: 550px;  margin: 0 auto;  margin-top: 100px;
+    display: flex; flex-wrap: wrap; align-content: space-between;justify-content: space-between;  box-shadow: 0 0 0 2px;}
+.box1 { width: 285px; height: 260px; }
+.box2 { width: 380px; height: 260px; }
+.box3 { width: 480px; height: 260px; }
+.box4 { width: 480px; height: 260px; }
+.box5 { width: 380px; height: 260px; }
+.box6 { width: 285px; height: 260px; }
+
+.plan { width: 590px; height: 70px; margin: 0 auto; margin-top: 100px;}
+
+.year { width: 1200px; height: 270px; background-color: rgb(216, 244, 238); margin: 0 auto; 
+        margin-top: 100px; 
+        display: flex; justify-content: space-around; align-items: center;box-shadow: 0 0 0 2px;}
+.y { width: 200px; height: 200px; background-color: rgb(149, 224, 231); border-radius: 150px;}
+.y > h3 , p { text-align: center; align-content: center; margin-top: 40px;}
+
+
+.game {width: 580px; height: 70px;  margin: 0 auto; margin-top: 100px;}
+
+.play {width: 1200px; height: 300px;  margin: 0 auto;  margin-top: 100px; 
+    display: flex; justify-content: space-between; align-items: center;box-shadow: 0 0 0 2px;}
+.box7 {width: 250px; height: 200px; }
+.box7 img {width: 100%;}
+.box8 {width: 250px; height: 200px; }
+.box8 img {width: 100%;}
+.box9 {width: 250px; height: 200px; }
+.box9 img {width: 100%; }
+.box10 {width: 250px; height: 200px;}
+
+.around {width: 380px; height: 100px; background-color: sienna; margin: 0 auto;  margin-top: 100px;}
+
+.tour {width: 380px; height: 100px; background-color: sandybrown;margin: 0 auto;  margin-top: 100px;}
+
+
+footer {width: 100%; height: 200px; background-color: slategrey;  margin-top: 100px; 
+    font-size: 20px;}
+nav ul {display: flex; justify-content: center; padding-top: 25px;}
