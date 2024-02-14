@@ -1,52 +1,203 @@
 @charset "utf-8";
 
-*{margin: 0; padding: 0; background-color: #cceef2; }
-h2 {text-align: center; font-size: 25px;}
-ul,li,ol {list-style:none; margin: 0; padding:0;}
+@font-face {
+    font-family: 'KNUTRUTHTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KNUTRUTHTTF.woff2') 
+    format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
-header  {  width: 100%; 
-    display: flex; align-items: center; justify-content: space-around; line-height: 50px; }
-nav ul { display: flex; }
-nav li a{text-decoration: none; padding:15px; color:#666; }
+
+*{ margin: 0 auto; padding: 0;}
+
+body { background-image: url(../img/뒷\ 배경.png);}
+
+h1 { font-family: 'KNUTRUTHTTF'; }
+
+h2 { text-align: center; font-size: 40px; font-family: 'KNUTRUTHTTF';}
+
+ul,li,ol { list-style:none; margin: 0; padding:0; font-family: 'NanumSquare';}
+
+p { font-family: 'NanumSquare';}
+
+
+/* 700px 이전 화면 */
+@media screen and (max-width:785px) {
+    header  {  width: 100%; display: flex; align-items: center; justify-content: space-around; line-height: 50px; background-color: #bed9f1c3; }
+    header > .logo {width: 200px; height: 50px;}
+    nav ul { display: flex; font-size: 15px; margin-top: -20px ;}
+    nav li a{text-decoration: none; padding: 5px; color:#031035;  }
+    
+    #slider {width: 100%;}
+    img {width: 100%; height: 100%;}
+    
+    .show {width: 90%; height: 400px;  margin: 0 auto; margin-top: 50px; background-color: rgb(216, 244, 238);
+        display: flex; flex-direction: column;
+        border: 3px solid #eee; box-shadow: 0 0 0 1px;}
+    .video {width: 100%;}
+    .add {width: 90%; text-align: center; background-color: #f6f5f5;}
+    .add h1 {padding-top: 50px;}
+    
+    .site {width: 100%; height: 70px;  margin: 0 auto; margin-top: 70px;}
+    
+    .photo {width: 90%; height: 100%;  margin: 0 auto;  margin-top: 50px; background-color: rgb(216, 244, 238);
+        display: flex; flex-wrap: wrap;   box-shadow: 1px 1px 5px rgb(91, 183, 211);}
+    .box1 { width: 50%; height: 50%; }
+    .box2 { width: 50%; height: 50%; }
+    .box3 { width: 50%; height: 50%; }
+    .box4 { width: 50%; height: 50%; }
+    .box5 { width: 50%; height: 50%; }
+    .box6 { width: 50%; height: 50%; }
+    
+    .plan { width: 590px; height: 70px; margin: 0 auto; margin-top: 70px;}
+    
+    .year { width: 95%; height: 270px; background-color: rgb(216, 244, 238); margin: 0 auto; 
+            margin-top: 60px; 
+            display: flex; justify-content: space-around; align-items: center;box-shadow: 0 0 0 2px;}
+    .y { width: 180px; height: 150px; background-color: rgb(149, 224, 231); border-radius: 150px;}
+    .y > h3 , p { text-align: center; align-content: center; margin-top: 30px; font-size: 13px;}
+    
+    
+    .game {width: 580px; height: 70px;  margin: 0 auto; margin-top: 70px;}
+    
+    .play {width: 95%; height: 200px;  margin: 0 auto;  margin-top: 50px; background-color: rgb(216, 244, 238);
+        display: flex; justify-content: space-between; align-items: center; box-shadow: 1px 1px 5px rgb(91, 183, 211);}
+    .box7 {width: 50%; height: 70%; }
+    .box7 img {width: 100%;}
+    .box8 {width: 50%; height: 70%; }
+    .box8 img {width: 100%;}
+    .box9 {width: 50%; height: 70%; }
+    .box9 img {width: 100%; }
+    .box10 {width: 50%; height: 70%;}
+    
+    .around {width: 380px; height: 100px;  margin: 0 auto;  margin-top: 100px;}
+    
+    .tour {width: 380px; height: 100px; margin: 0 auto;  margin-top: 100px;}
+    
+    
+    footer {width: 100%; height: auto; background-color: slategrey;  margin-top: 70px; 
+        font-size: 15px;}
+    nav ul { display: flex; justify-content: center; padding-top: 20px; }
+    }
+
+
+/* 701px ~ 1229 화면 */
+@media screen and (min-width:786px) {
+    header  {  width: 100%; display: flex; align-items: center; justify-content: space-around; line-height: 50px; background-color: #bed9f1c3; }
+    header > .logo {width: 200px; height: 50px;}
+    nav ul { display: flex; font-size: 15px; margin-top: -20px ;}
+    nav li a{text-decoration: none; padding: 30px; color:#031035;  }
+    
+    #slider {width: 100%;}
+    img {width: 100%; height: 100%;}
+    
+    .show {width: 90%; height: 400px;  margin: 0 auto; margin-top: 100px; background-color: rgb(216, 244, 238);
+        display: flex; justify-content: space-around; align-items: center;
+        border: 3px solid #eee; box-shadow: 0 0 0 1px;}
+    .video {width: 100%; height: 100%;}
+    .add {width: 100%; height: auto;  text-align: center; background-color: #f6f5f5; padding: 10px;}
+    .add h1 {padding-top: 50px;}
+    
+    .site {width: 100%; height: 70px;  margin: 0 auto; margin-top: 70px;}
+    
+    .photo {width: 90%; height: 100%;  margin: 0 auto;  margin-top: 50px; background-color: rgb(216, 244, 238);
+        display: flex; flex-wrap: wrap;   box-shadow: 1px 1px 5px rgb(91, 183, 211);}
+    .box1 { width: 50%; height: 50%; }
+    .box2 { width: 50%; height: 50%; }
+    .box3 { width: 50%; height: 50%; }
+    .box4 { width: 50%; height: 50%; }
+    .box5 { width: 50%; height: 50%; }
+    .box6 { width: 50%; height: 50%; }
+    
+    .plan { width: 590px; height: 70px; margin: 0 auto; margin-top: 70px;}
+    
+    .year { width: 95%; height: 270px; background-color: rgb(216, 244, 238); margin: 0 auto; 
+            margin-top: 60px; 
+            display: flex; justify-content: space-around; align-items: center;box-shadow: 0 0 0 2px;}
+    .y { width: 180px; height: 150px; background-color: rgb(149, 224, 231); border-radius: 150px;}
+    .y > h3 , p { text-align: center; align-content: center; margin-top: 30px; font-size: 13px;}
+    
+    
+    .game {width: 580px; height: 70px;  margin: 0 auto; margin-top: 70px;}
+    
+    .play {width: 95%; height: 200px;  margin: 0 auto;  margin-top: 50px; background-color: rgb(216, 244, 238);
+        display: flex; justify-content: space-between; align-items: center; box-shadow: 1px 1px 5px rgb(91, 183, 211);}
+    .box7 {width: 50%; height: 70%; }
+    .box7 img {width: 100%;}
+    .box8 {width: 50%; height: 70%; }
+    .box8 img {width: 100%;}
+    .box9 {width: 50%; height: 70%; }
+    .box9 img {width: 100%; }
+    .box10 {width: 50%; height: 70%;}
+    
+    .around {width: 380px; height: 100px;  margin: 0 auto;  margin-top: 100px;}
+    
+    .tour {width: 380px; height: 100px; margin: 0 auto;  margin-top: 100px;}
+    
+    
+    footer {width: 100%; height: auto; background-color: slategrey;  margin-top: 70px; 
+        font-size: 15px;}
+    nav ul { display: flex; justify-content: center; padding-top: 20px; }
+    }
+    
+
+/* 1230px 이후 화면  */
+@media screen and (min-width:1230px) {
+header  {  width: 100%; display: flex; align-items: center; justify-content: space-around; line-height: 50px; background-color: #bed9f1c3; }
+header > .logo {width: 200px; height: 50px;}
+nav ul { display: flex; font-size: 15px; margin-top: -20px ;}
+nav li a{text-decoration: none; padding: 30px; color:#031035;  }
 
 #slider {width: 100%;}
 img {width: 100%; height: 100%;}
 
-.show {width: 1200px; height: 400px;  margin: 0 auto; margin-top: 30px;
-    display: flex; justify-content: space-around; align-items: center;}
+.show {width: 1200px; height: 400px;  margin: 0 auto; margin-top: 100px; background-color: rgb(216, 244, 238);
+    display: flex; justify-content: space-around; align-items: center;
+    border: 3px solid #eee; box-shadow: 0 0 0 1px;}
 .video {width: 600px; height: 400px;}
-.add {width: 500px; height: 350px;  text-align: center;}
+.add {width: 500px; height: 350px;  text-align: center; background-color: #f6f5f5;}
 .add h1 {padding-top: 50px;}
 
-.site {width: 590px; height: 70px;  margin: 0 auto; margin-top: 30px;}
+.site {width: 590px; height: 70px;  margin: 0 auto; margin-top: 100px;}
 
-.photo {width: 1200px; height: 550px;  margin: 0 auto;  margin-top: 30px;
-    display: flex; flex-wrap: wrap; align-content: space-between;justify-content: space-between;  }
-.box1 {width: 285px; height: 260px; background-color: teal;}
-.box2 {width: 380px; height: 260px; background-color: teal;}
-.box3 {width: 480px; height: 260px; background-color: teal;}
-.box4 {width: 480px; height: 260px; background-color: teal;}
-.box5 {width: 380px; height: 260px; background-color: teal;}
-.box6 {width: 285px; height: 260px; background-color: teal;}
+.photo {width: 1200px; height: 550px;  margin: 0 auto;  margin-top: 100px; background-color: rgb(216, 244, 238);
+    display: flex; flex-wrap: wrap; align-content: space-between; justify-content: space-between;  box-shadow: 1px 1px 5px rgb(91, 183, 211);}
+.box1 { width: 285px; height: 260px; }
+.box2 { width: 380px; height: 260px; }
+.box3 { width: 480px; height: 260px; }
+.box4 { width: 480px; height: 260px; }
+.box5 { width: 380px; height: 260px; }
+.box6 { width: 285px; height: 260px; }
+
+.plan { width: 590px; height: 70px; margin: 0 auto; margin-top: 100px;}
+
+.year { width: 1200px; height: 270px; background-color: rgb(216, 244, 238); margin: 0 auto; 
+        margin-top: 100px; 
+        display: flex; justify-content: space-around; align-items: center;box-shadow: 0 0 0 2px;}
+.y { width: 200px; height: 200px; background-color: rgb(149, 224, 231); border-radius: 150px;}
+.y > h3 , p { text-align: center; align-content: center; margin-top: 40px; }
 
 
-.year {width: 1200px; height: 270px; background-color: violet; margin: 0 auto;  margin-top: 30px;}
+.game {width: 580px; height: 70px;  margin: 0 auto; margin-top: 100px;}
 
-.game {width: 580px; height: 70px;  margin: 0 auto; margin-top: 30px;}
-
-.play {width: 995px; height: 300px;  margin: 0 auto;  margin-top: 30px; 
-    display: flex; justify-content: space-around; align-items: center;}
+.play {width: 1200px; height: 300px;  margin: 0 auto;  margin-top: 100px; background-color: rgb(216, 244, 238);
+    display: flex; justify-content: space-between; align-items: center; box-shadow: 1px 1px 5px rgb(91, 183, 211);}
 .box7 {width: 250px; height: 250px; }
-.box7 img {width: 100%; height: 100%;}
+.box7 img {width: 100%;}
 .box8 {width: 250px; height: 250px; }
-.box8 img {width: 100%; height: 100%;}
+.box8 img {width: 100%;}
 .box9 {width: 250px; height: 250px; }
-.box9 img {width: 100%; height: 100%;}
+.box9 img {width: 100%; }
+.box10 {width: 250px; height: 250px;}
 
-.around {width: 380px; height: 100px; background-color: sienna; margin: 0 auto;  margin-top: 30px;}
+.around {width: 380px; height: 100px;  margin: 0 auto;  margin-top: 100px;}
 
-.tour {width: 380px; height: 100px; background-color: sandybrown;margin: 0 auto;  margin-top: 30px;}
+.tour {width: 380px; height: 100px; margin: 0 auto;  margin-top: 100px;}
 
 
-footer{width: 100%; height: 200px; background-color: slategrey;  margin-top: 30px;}
-footer > nav {display: flex; justify-content: center; }
+footer {width: 100%; height: 200px; background-color: slategrey;  margin-top: 100px; 
+    font-size: 15px;}
+nav ul { display: flex; justify-content: center; padding-top: 20px; }
+}
