@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
 @font-face {
     font-family: 'KNUTRUTHTTF';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KNUTRUTHTTF.woff2') 
@@ -7,7 +9,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
 
 
 *{ margin: 0 auto; padding: 0;}
@@ -21,64 +23,76 @@ p { font-family: 'NanumSquare';}
 /* 699px이전 화면 */
 
 @media screen and (max-width:699px) {
-    header  { width: 100%; display: flex; align-items: center; justify-content: space-around; line-height: 50px; background-color: #d2d2d2; }
-    .logo { width: 200px; height: 50px; background-color: #d2d2d2;}
+    header  { width: 100%; display: flex; align-items: center; justify-content: space-around; line-height: 50px; background-color: #d2d2d2; position: relative;}
+    .logo { width: 200px; height: 50px; background-color: #d2d2d2; margin: 0;}
     .logo img {width: 100%; height: 100%;}
     nav ul { display: flex; font-size: 15px; margin-top: -20px ;}
-    nav li a{text-decoration: none; padding: 30px; color: rgb(0, 0, 0);  }
+    nav li a{text-decoration: none; color: rgb(0, 0, 0); padding: 10px;}
+    .small {display: flex; justify-content: space-between; align-items: center; width: 100%;}
+    .a {display: block; margin: 0; padding: 10px;}
+    .b {display: none;position: absolute;  top: 50px; left: 0; z-index: 5; background-color: #d2d2d2;width: 100%; padding-left: 10px; }
+    .b ul {display: flex; flex-direction: column; padding: 15px;}
+    .b li a:hover{background-color: #eee; cursor: pointer;}
     
     #slider { width: 100%; }
-    .slide { width: 100%; height: 400px; position: relative;}
+    .slide { width: 100%; height: 250px; position: relative;}
     .slide li {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
     .slide li:not(:first-child){display: none;}
     .slide img { width: 100%; height: 100%; }
     
-    .show { width: 95%; height: 400px;  margin: 100px auto 0;  background-color: rgb(216, 244, 238);
-        display: flex; justify-content: space-around; align-items: center;
+    .show { width: 95%;  margin: 100px auto 0;  background-color: rgb(216, 244, 238);
+        display: flex;  align-items: center; flex-direction: column;
         border: 3px solid #eee; box-shadow: 0 0 0 1px;}
-    .video { width: 600px; height: 400px;}
-    .add { width: 500px; height: 350px;  text-align: center; background-color: #f6f5f5;}
-    .add h1 { padding-top: 50px;}
-    .add p {font-size: 13px; padding: 10px;}
+    .video { width: 100%; height: 300px;}
+    .add { width: 100%; height: 90%; text-align: center; background-color: #cccccc;}
+    .add h1 { padding-top: 20px; font-size: 1.5rem;}
+    .add p {font-size: 2.5vw; padding: 15px;}
     
-    .site { width: 590px; height: 70px;  margin: 200px auto 0;}
+    .site { width: 100%; height: 70px;  margin: 200px auto 0;}
     
     .photo { width: 95%; height: 80%;  margin: 30px auto; background-color: rgb(216, 244, 238);
-        display: flex; flex-wrap: wrap; align-content: space-between; justify-content: space-between;  box-shadow: 1px 1px 5px rgb(91, 183, 211);}
+        display: flex; flex-direction: column; align-content: space-between; justify-content: space-between;  box-shadow: 1px 1px 5px rgb(91, 183, 211);}
     .photo div img {width: 100%; height: 100%;}
-    .box1 { width: 50%; height: 50%; }
-    .box2 { width: 50%; height: 50%; }
-    .box3 { width: 50%; height: 50%; }
-    .box4 { width: 50%; height: 50%; }
-    .box5 { width: 50%; height: 50%; }
-    .box6 { width: 50%; height: 50%; }
+    .box1 { width: 80%; }
+    .box2 { width: 80%; }
+    .box3 { width: 80%; }
+    .box4 { width: 80%; }
+    .box5 { width: 80%; }
+    .box6 { width: 80%; }
     
-    .plan { width: 590px; height: 70px; margin: 200px auto 0; }
+    .plan { width: 100%; height: 70px; margin: 200px auto 0; }
     
-    .year { width: 95%; background-color: rgb(216, 244, 238); margin: 30px auto; 
-            display: flex; justify-content: space-around; align-items: center;box-shadow: 0 0 0 2px;}
-    .y { width: 100%; height: 150px; background-color: rgb(149, 224, 231); border-radius: 150px;}
-    .y > h3 , p { text-align: center; align-content: center; margin-top: 25px; font-size: 1rem;}
+    .year { width: 95%;height: 100%; background-color: rgb(216, 244, 238); margin: 30px auto; 
+            display: flex; box-shadow: 0 0 0 2px; flex-direction: column; }
+    .year div { margin: 5px auto; border-radius: 100px;} 
+    .y { width: 80%;  background-color: rgb(149, 224, 231); }
+    .y > h3 { text-align: center;  margin-top: 20px; font-size: 1em;}
+    .y > p { text-align: center; margin: 20px auto; font-size: 1em;}
     
     
     
-    .game {width: 580px; height: 70px;  margin: 200px auto 0; }
+    .game {width: 100%; height: 70px;  margin: 200px auto 0; }
     
     .play {width: 95%; height: 100%;  margin: 20px auto 0;  background-color: rgb(216, 244, 238);
-        display: flex; flex-wrap: wrap; align-items: center; box-shadow: 1px 1px 5px rgb(91, 183, 211);}
-    .box7 {width: 40%; height: 250px; }
+        display: flex; flex-direction: column; align-items: center; box-shadow: 1px 1px 5px rgb(91, 183, 211);}
+    .play div {margin: 20px;}
+    .box7 {width: 90%; height: 250px; }
     .box7 img {width: 100%; height: 100%;}
-    .box8 {width: 40%; height: 250px; }
+    .box8 {width: 90%; height: 250px; }
     .box8 img {width: 100%;height: 100%;}
-    .box9 {width: 40%; height: 250px; }
+    .box9 {width: 90%; height: 250px; }
     .box9 img {width: 100%; height: 100%;}
-    .box10 {width: 40%; height: 250px;}
+    .box10 {width: 90%; height: 250px;}
     .box10 img {width: 100%; height: 100%;}
     
     
     footer {width: 100%; height: 200px; background-color: slategrey;  margin-top: 100px; 
-        font-size: 1rem;}
-    nav ul { display: flex; justify-content: center; padding-top: 20px; }
+         display: flex;}
+    nav ul { flex-direction: column; justify-content: center; padding-top: 35px; font-size: 0.3rem;}
+    nav ul li {padding-top: 20px;}
+    .down a:hover {color: beige;}
+    .foot { margin: 70px auto; text-align: center; }
+    .foot p {font-size: 0.7rem;}
     
     }
 
@@ -90,6 +104,9 @@ p { font-family: 'NanumSquare';}
     .logo img {width: 100%; height: 100%;}
     nav ul { display: flex; font-size: 15px; margin-top: -20px ;}
     nav li a{text-decoration: none; padding: 30px; color: rgb(0, 0, 0);  }
+    .a {display: none;}
+    .b {display: block;}
+    .b li a:hover{background-color: #eee; cursor: pointer;}
     
     #slider { width: 100%; }
     .slide { width: 100%; height: 400px; position: relative;}
@@ -130,13 +147,13 @@ p { font-family: 'NanumSquare';}
     
     .play {width: 95%; height: 100%;  margin: 20px auto 0;  background-color: rgb(216, 244, 238);
         display: flex; flex-wrap: wrap; align-items: center; box-shadow: 1px 1px 5px rgb(91, 183, 211);}
-    .box7 {width: 40%; height: 250px; }
+    .box7 {width: 40%; height: 300px; }
     .box7 img {width: 100%; height: 100%;}
-    .box8 {width: 40%; height: 250px; }
+    .box8 {width: 40%; height: 300px; }
     .box8 img {width: 100%;height: 100%;}
-    .box9 {width: 40%; height: 250px; }
+    .box9 {width: 40%; height: 300px; }
     .box9 img {width: 100%; height: 100%;}
-    .box10 {width: 40%; height: 250px;}
+    .box10 {width: 40%; height: 300px;}
     .box10 img {width: 100%; height: 100%;}
     
     
@@ -144,6 +161,8 @@ p { font-family: 'NanumSquare';}
     footer {width: 100%; height: 200px; background-color: slategrey;  margin-top: 100px; 
         font-size: 20px;}
     nav ul { display: flex; justify-content: center; padding-top: 20px; }
+    .down a:hover {color: beige;}
+    .foot {margin: 40px auto;}
     
     }
 
@@ -155,6 +174,9 @@ header  { width: 100%; display: flex; align-items: center; justify-content: spac
 .logo img {width: 100%; height: 100%;}
 nav ul { display: flex; font-size: 15px; margin-top: -20px ;}
 nav li a{text-decoration: none; padding: 30px; color: rgb(0, 0, 0);  }
+.a {display: none;}
+.b {display: block;}
+.b li a:hover{background-color: #eee; cursor: pointer;}
 
 #slider { width: 100%; }
 .slide { width: 100%; height: 570px; position: relative;}
@@ -205,6 +227,7 @@ nav li a{text-decoration: none; padding: 30px; color: rgb(0, 0, 0);  }
 
 footer { width: 100%; height: 200px; background-color: slategrey;  margin-top: 100px; 
     font-size: 20px;}
+    .down a:hover {color: beige;}
 nav ul { display: flex; justify-content: center; padding-top: 20px; }
 
 }

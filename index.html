@@ -15,8 +15,9 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img src="img/로고.png" alt="로고">
+        <div class="small">
+            <div class="logo"><img src="img/로고.png" alt="로고"></div>
+            <img src="img/i.png" alt="햄버거" class="a">
         </div>
 
         <nav class="b">
@@ -33,9 +34,9 @@
 
     <div id="slider">
         <ul class="slide">
-            <li><img src="img/슬라이더2.jpg" alt="송어 축제" ></li>
-            <li><img src="img/슬라이더3.jpg" alt="송어 축제" ></li>
-            <li><img src="img/슬라이더5.jpg" alt="송어 축제" ></li>
+            <li><img src="img/슬라이더2.jpg" alt="송어 축제"></li>
+            <li><img src="img/슬라이더3.jpg" alt="송어 축제"></li>
+            <li><img src="img/슬라이더5.jpg" alt="송어 축제"></li>
         </ul>
     </div>
 
@@ -138,7 +139,7 @@
             <img src="img/눈썰매.jpg" alt="놀이시설2">
         </div>
         <div class="box9">
-            <img src="img/눈썰매 3.jpg" alt="놀이시설3">
+            <img src="img/눈썰매3.jpg" alt="놀이시설3">
         </div>
         <div class="box10">
             <img src="img/먹거리.jpg" alt="놀이시설4">
@@ -157,27 +158,42 @@
             </nav>
         </div>
         <div class="foot">
-            <P>진부의 미래를 열어가는 희망공동체 평창송어축제위원회<br>
+            <P>미래를 열어가는 희망공동체 평창송어축제위원회<br>
                 사업자번호 : 226-82-63559 대표자 최기성<br>
-                강원도 평창군 진부면 경강로 3562번지 (하진부리 325번지)<br>
+                강원도 평창군 진부면 경강로 3562번지 <br>
                 Copyright 2017 평창송어축제. All Rights Reserved.
             </P>
         </div>
     </footer>
 
     <script>
-        let i=0;
+        let i = 0;
 
-        function slide(){
+        function slide() {
             i++;
-            if (i>$('.slide li:last').index()){
-                i=0;
+            if (i > $('.slide li:last').index()) {
+                i = 0;
             }
             $('.slide li').eq(i).stop().fadeIn('slow');
-            $('.slide li').eq(i-1).stop().fadeOut();
+            $('.slide li').eq(i - 1).stop().fadeOut();
         }
 
-        setInterval(slide,3000);
+        setInterval(slide, 3000);
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".a").click(function(){
+                $(".b").slideToggle();
+            });
+        });
+
+        $(window).resize(function(){
+            if(window.innerWidth>=699){
+                $('.b').show();
+            }else{
+                $('.b').hide();
+            }
+        });
     </script>
 
 </body>
