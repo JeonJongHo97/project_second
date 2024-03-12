@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
+
 <body>
 
     <header>
         <div class="small">
-            <div class="logo"><img src="img/로고.png" alt="로고"></div>
+            <div class="logo"><a href="index.html"><img src="img/로고.png" alt="로고"></a></div>
             <img src="img/i.png" alt="햄버거" class="a">
         </div>
 
         <nav class="b">
             <ul>
-                <li><a href="#">송어축제</a></li>
+                <li><a href="sub.html">송어축제</a></li>
                 <li><a href="#">행사안내</a></li>
                 <li><a href="#">프로그램</a></li>
                 <li><a href="#">주변안내</a></li>
@@ -30,7 +32,7 @@
     </header>
 
     <div id="box">
-        <h1>평창 송어 축제 소개</h1>
+        <h1>축제 소개</h1>
     </div>
 
     <div id="description">
@@ -65,7 +67,7 @@
             </ul>
         </div>
         <div class="int">
-            <p> 송어는 연어과에 속하는 소하형 어종으로서 한국의 동해와 동해로 흐르는 일부 하천에 분포한다.<br> 
+            <p> 송어는 연어과에 속하는 소하형 어종으로서 한국의 동해와 동해로 흐르는 일부 하천에 분포한다.<br>
                 몸은 길고 좌우로 납작한 편이며, 비늘은 작고, 옆줄 비늘수는 112~140개이다.<br>
                 등 지느러미 뒤쪽에 기름 지느러미가 있으며 등쪽은 짙은 청색이고 약간의 작은 흑색점이 흩어져있다.<br>
                 어렸을때는 몸의 양옆에 10개 내외의 크고 둥근 흑색 반문이 있는데<br>
@@ -89,8 +91,8 @@
         <div class="box1">
             <h1>행사장 안내</h1>
             <P>각 행사장 배치도<br>
-               보시고<br>
-               즐거운 하루 보내세요~
+                보시고<br>
+                즐거운 하루 보내세요~
             </P><br>
             <button class="btn">자세히 보러가기</button>
         </div>
@@ -100,10 +102,10 @@
         <div class="box2">
             <h1>평창 송어낚시 이용 금액</h1>
             <p>평창송어 축제에서 잊지 못할 추억을 만들어보세요<br>
-               낚시대는 가져오시거나 축제장 판매점에서 구입하셔야 합니다.<br>
-               텐트 낚시터는 온라인 예약으로 운영합니다.<br>
-               모든 입장권, 낚시용품 환불시 구매영수증을 꼭 지참하셔야 합니다.<br><br>
-               *낚시터 운영시간 : 오전 09:00 ~ 오후 05:00*
+                낚시대는 가져오시거나 축제장 판매점에서 구입하셔야 합니다.<br>
+                텐트 낚시터는 온라인 예약으로 운영합니다.<br>
+                모든 입장권, 낚시용품 환불시 구매영수증을 꼭 지참하셔야 합니다.<br><br>
+                *낚시터 운영시간 : 오전 09:00 ~ 오후 05:00*
             </p>
         </div>
         <div class="box2">
@@ -113,7 +115,10 @@
 
     <div id="price">
         <div class="box3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.6837262310737!2d128.5544153764325!3d37.63312672030599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35622430463d3287%3A0x330bb3dd407b4ab2!2z7Iah7Ja07LaV7KCc7J6l!5e0!3m2!1sko!2skr!4v1708416704749!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.6837262310737!2d128.5544153764325!3d37.63312672030599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35622430463d3287%3A0x330bb3dd407b4ab2!2z7Iah7Ja07LaV7KCc7J6l!5e0!3m2!1sko!2skr!4v1708416704749!5m2!1sko!2skr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="box3">
             <h1>자가용 이용시</h1>
@@ -158,6 +163,23 @@
 
         setInterval(slide, 3000);
     </script>
-    
+
+    <script>
+        $(document).ready(function () {
+            $(".a").click(function () {
+                $(".b").slideToggle();
+            });
+        });
+
+        $(window).resize(function () {
+            if (window.innerWidth >= 699) {
+                $('.b').show();
+            } else {
+                $('.b').hide();
+            }
+        });
+    </script>
+
 </body>
+
 </html>
