@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNME0HVSYN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SNME0HVSYN');
+    </script>
+
 
 </head>
 
@@ -181,16 +192,16 @@
         setInterval(slide, 3000);
     </script>
     <script>
-        $(document).ready(function(){
-            $(".a").click(function(){
+        $(document).ready(function () {
+            $(".a").click(function () {
                 $(".b").slideToggle();
             });
         });
 
-        $(window).resize(function(){
-            if(window.innerWidth>=699){
+        $(window).resize(function () {
+            if (window.innerWidth >= 699) {
                 $('.b').show();
-            }else{
+            } else {
                 $('.b').hide();
             }
         });
